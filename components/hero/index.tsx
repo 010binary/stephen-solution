@@ -6,6 +6,7 @@ import Navigation from "../navigation";
 import InteractiveSection from "./interactive-section";
 import { Button } from "@/components/ui/button";
 import { backgroundImages, sections } from "@/data";
+import { Minus } from "lucide-react";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -44,22 +45,25 @@ export default function Hero() {
       <div className="relative z-20">
         <Navigation />
 
-        <div className="max-w-[95rem] mx-auto px-4 pt-24 pb-16">
+        <div className="max-w-[95rem] mx-auto px-6 pt-24 pb-16 flex justify-between flex-col">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
               Meeting Future Demand In A Sustainable Way
             </h1>
-            <p className="text-lg text-gray-200 mb-8">
+            <p className="text-lg md:text-3xl text-gray-200 mb-10">
               We&apos;re doing our part in that regard with greener practices
               that don&apos;t harm the environment.
             </p>
-            <Button className="bg-[#e5fb34] text-black hover:bg-[#d4ea23]">
+            <Button className="bg-yellow-300 text-black hover:bg-[#d4ea23] duration-300 rounded-none w-72 h-16 text-lg md:text-xl">
+              <span className="inline">
+                <Minus strokeWidth={3} />
+              </span>
               DISCOVER MORE
             </Button>
           </div>
 
           {/* Interactive Sections */}
-          <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-36 grid  md:grid-cols-2 lg:grid-cols-3">
             {sections.map((section) => (
               <InteractiveSection
                 key={section.title}

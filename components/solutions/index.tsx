@@ -1,5 +1,12 @@
-import SolutionCard from "./solution-card"
-import { FlaskRoundIcon as Flask, Flame, Factory, Droplet, Building2, Wind } from "lucide-react"
+import SolutionCard from "./solution-card";
+import {
+  FlaskRoundIcon as Flask,
+  Flame,
+  Factory,
+  Droplet,
+  Building2,
+  Wind,
+} from "lucide-react";
 
 export default function SolutionsGrid() {
   const solutions = [
@@ -40,19 +47,24 @@ export default function SolutionsGrid() {
         "Duis cras facilisis euismod habitasse interdum. Pretium est vehicula risus phasellus pharetra sodales.",
       icon: <Building2 className="w-8 h-8 text-gray-600" />,
     },
-  ]
+  ];
 
   return (
-    <section className="py-16 px-4">
-      <div className="container mx-auto">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Powerful solutions for a sustainable future</h2>
-          <p className="text-gray-600">
-            Ultricies purus commodo arcu pellentesque sapien. Porta platea efficitur neque inceptos natoque quam
-            curabitur. Suspendisse montes torquent luctus sagittis blandit nisl cubilia. Libero mattis nibh consequat
-            class nunc.
-          </p>
-          <div className="w-16 h-1 bg-[#e5fb34] mx-auto mt-6"></div>
+    <section className="py-8 md:py-16 ">
+      <div className="container max-w-[95rem] mx-auto px-6">
+        <div className="mb-7 text-center md:text-left md:flex">
+          <h2 className="text-4xl capitalize md:text-5xl font-bold mb-4 w-full md:w-1/2">
+            Powerful solutions for a sustainable future
+          </h2>
+          <section className="w-full md:w-1/2">
+            <p className="text-justify text-gray-600 md:pt-4">
+              Ultricies purus commodo arcu pellentesque sapien. Porta platea
+              efficitur neque inceptos natoque quam curabitur. Suspendisse
+              montes torquent luctus sagittis blandit nisl cubilia. Libero
+              mattis nibh consequat class nunc.
+            </p>
+            <div className="w-16 h-1 bg-[#e5fb34] mt-3"></div>
+          </section>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,6 +80,5 @@ export default function SolutionsGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
