@@ -21,7 +21,7 @@ export default function Footer() {
         <div
           className="relative z-20 px-6 py-16 bg-cover bg-center"
           style={{
-            backgroundImage: `url("oil-rig-at-port-e1674741523466.jpg")`,
+            backgroundImage: `url("placeholder-2.jpg")`,
           }}
         >
           <div className="max-w-7xl mx-auto text-white lg:flex">
