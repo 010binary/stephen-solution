@@ -45,7 +45,7 @@ export default function Hero() {
       <div className="relative z-20">
         <Navigation />
 
-        <div className="max-w-[95rem] mx-auto px-6 pt-24 pb-16 flex justify-between flex-col">
+        <div className="max-w-[95rem] px-6 mx-auto  pt-24 pb-16 flex justify-between flex-col">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
               Meeting Future Demand In A Sustainable Way

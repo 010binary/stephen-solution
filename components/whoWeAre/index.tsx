@@ -19,7 +19,7 @@ export default function WhoWeAre() {
 
   return (
     <section className="py-10 px-4 bg-[#f8f8f8]">
-      <div className="container max-w-[95rem] mx-auto">
+      <div className="container max-w-[95rem] px-4 mx-auto">
         <TrustedBrands />
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
