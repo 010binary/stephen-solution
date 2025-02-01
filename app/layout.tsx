@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${roboto.className}`}>
+      <body
+        className={`antialiased ${roboto.className} w-screen overflow-x-hidden`}
+      >
         {children}
         <Footer />
       </body>

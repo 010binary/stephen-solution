@@ -1,5 +1,6 @@
 import Hero from "@/components/hero/index";
-import NewsSection from "@/components/news";
+// import NewsSection from "@/components/news";
+import ProjectsSection from "@/components/project";
 import WorldMap from "@/components/section3";
 import ParallaxSection from "@/components/section4";
 import Bridge from "@/components/section5";
@@ -19,7 +20,7 @@ export default function Home() {
       <WhyChooseUs />
       <Bridge />
       <TeamSection />
-      <NewsSection />
+      <ProjectsSection />
     </>
   );
 }
