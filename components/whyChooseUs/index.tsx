@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
                 className="rounded-lg"
               />
             </div>
-            <div className="absolute bottom-[-25%] right-[-15%] w-2/3 z-20">
+            <div className="absolute -bottom-10 right-0 md:-right-24 w-2/3 z-20">
               <Image
                 src="/aerial-view-of-oil-refinery-industrial-site-in-a-modern-city-e1674900154491.jpg"
                 alt="Aerial view of oil refinery"

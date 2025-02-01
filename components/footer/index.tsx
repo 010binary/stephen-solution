@@ -24,29 +24,31 @@ export default function Footer() {
             backgroundImage: `url("placeholder-2.jpg")`,
           }}
         >
-          <div className="max-w-7xl mx-auto text-white lg:flex">
-            <div>
-              <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
-              <p className="mb-8">
-                Sign up our newsletter to get update news and article about
-                company.
-              </p>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8 items-center text-white">
+              <div>
+                <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
+                <p className="text-lg">
+                  Sign up our newsletter to get update news and article about
+                  company.
+                </p>
+              </div>
+              <form onSubmit={handleSubmit} className="flex gap-4 w-full">
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Email your email"
+                  required
+                  className="flex-1 bg-white text-black"
+                />
+                <Button
+                  type="submit"
+                  className="bg-[#e5fb34] text-black hover:bg-[#d4ea23] whitespace-nowrap px-8"
+                >
+                  SIGN UP
+                </Button>
+              </form>
             </div>
-            <form onSubmit={handleSubmit} className="flex gap-4 max-w-2xl">
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email your email"
-                required
-                className="flex-1 bg-white text-black"
-              />
-              <Button
-                type="submit"
-                className="bg-[#e5fb34] text-black hover:bg-[#d4ea23] px-8"
-              >
-                SIGN UP
-              </Button>
-            </form>
           </div>
         </div>
       </div>
@@ -155,7 +157,7 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <Image
-                src="/placeholder.png"
+                src="/logo.svg"
                 alt="stephen Logo"
                 width={150}
                 height={40}
