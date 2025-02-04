@@ -3,30 +3,17 @@
 import { Button } from "@/components/ui/button";
 import TeamCard from "./teamCard";
 
-const teamMembers = [
-  {
-    image: "/team/Team_1.jpg",
-    name: "Jason Ramos",
-    position: "Managing Director",
-  },
-  {
-    image: "/team/Team_3.jpg",
-    name: "Charles Bernardi",
-    position: "Head of Operation",
-  },
-  {
-    image: "/team/Team_7.jpg",
-    name: "Corrie Deegan",
-    position: "Customer Relation",
-  },
-  {
-    image: "/team/Team_8.jpg",
-    name: "James Lomas",
-    position: "Operations Lead",
-  },
-];
+interface TeamMember {
+  name: string;
+  image: string;
+  position: string;
+}
 
-export default function TeamSection() {
+interface TeamSectionProps {
+  teamMembers: TeamMember[];
+}
+
+export default function TeamSection({ teamMembers }: TeamSectionProps) {
   return (
     <section className="md:py-16 ">
       <div className="container max-w-[95rem] px-4 mx-auto">

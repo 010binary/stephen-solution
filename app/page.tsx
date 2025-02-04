@@ -8,6 +8,7 @@ import SolutionsGrid from "@/components/solutions";
 import TeamSection from "@/components/team";
 import WhoWeAre from "@/components/whoWeAre/index";
 import WhyChooseUs from "@/components/whyChooseUs";
+import { teamMembers } from "@/data/index";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <SolutionsGrid />
       <WhyChooseUs />
       <Bridge />
-      <TeamSection />
+      <TeamSection teamMembers={teamMembers} />
       <ProjectsSection />
     </>
   );
