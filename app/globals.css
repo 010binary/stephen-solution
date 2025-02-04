@@ -76,3 +76,35 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+.zoomIn{
+  animation: zoom 100s ease-in-out 3s ;
+}
+
+@keyframes zoom {
+  0%{
+    scale: 1
+  }
+  50%{
+    scale: 5;
+  }
+  100%{
+    scale: 0
+  }
+}
+.zoomout{
+  animation: zoom 100s ease-in-out 3s ;
+}
+
+@keyframes zoom {
+  0%{
+    scale: 1
+  }
+  50%{
+    scale: 1;
+  }
+  100%{
+    scale: 1
+  }
+}
