@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Navigation from "../navigation";
 import InteractiveSection from "./interactive-section";
 import { Button } from "@/components/ui/button";
 import { backgroundImages, sections } from "@/data";
@@ -25,7 +24,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative min-h-[95dvh] overflow-hidden  max-h-screen">
+    <div className="relative  overflow-hidden">
       {/* Background Images */}
       {backgroundImages.map((image, index) => {
         return (
@@ -46,8 +45,8 @@ export default function Hero() {
               backgroundPosition: "center",
             }}
             transition={{
-              opacity: { duration: 5, delay: 0 },  // Opacity changes immediately
-              scale: { duration: 3, delay: 3 },    // Scale starts after 1 second
+              opacity: { duration: 5, delay: 0 },
+              scale: { duration: 3, delay: 3 },
             }}
           />
         );
@@ -58,15 +57,14 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-20">
-        <Navigation />
-
         <div className="max-w-[95rem] px-6 mx-auto pt-24 pb-16 flex justify-between flex-col">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
               Meeting Future Demand In A Sustainable Way
             </h1>
             <p className="text-lg md:text-3xl text-gray-200 mb-10">
-              We&apos;re doing our part in that regard with greener practices that don&apos;t harm the environment.
+              We&apos;re doing our part in that regard with greener practices
+              that don&apos;t harm the environment.
             </p>
             <Button className="bg-yellow-300 text-black hover:bg-[#d4ea23] duration-300 rounded-none w-72 h-16 text-lg md:text-xl">
               <span className="inline">
@@ -79,7 +77,11 @@ export default function Hero() {
           {/* Interactive Sections */}
           <div className="mt-36 grid md:grid-cols-2 lg:grid-cols-3">
             {sections.map((section) => (
-              <InteractiveSection key={section.title} title={section.title} description={section.description} />
+              <InteractiveSection
+                key={section.title}
+                title={section.title}
+                description={section.description}
+              />
             ))}
           </div>
         </div>

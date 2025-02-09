@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const values = [
   { label: "Accountability", id: 1 },
@@ -14,6 +15,11 @@ const values = [
 ];
 
 export default function RecruitmentSection() {
+  const Router = useRouter();
+
+  const handleClick = () => {
+    Router.push("/careers");
+  };
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto">
@@ -60,7 +66,10 @@ export default function RecruitmentSection() {
                 ))}
               </div>
 
-              <Button className="bg-[#e5fb34] text-black hover:bg-[#d4ea23]">
+              <Button
+                className="bg-[#e5fb34] text-black hover:bg-[#d4ea23]"
+                onClick={handleClick}
+              >
                 {" "}
                 VIEW CAREERS{" "}
               </Button>

@@ -26,7 +26,7 @@ export default function TeamCard({
       transition={{
         duration: 0.5,
         delay: index * 0.1,
-        ease: [0.21, 1.11, 0.81, 0.99], // spring-like easing
+        ease: [0.21, 1.11, 0.81, 0.99],
       }}
     >
       <Card className="overflow-hidden group">

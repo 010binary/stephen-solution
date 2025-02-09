@@ -85,3 +85,36 @@ export const completeteamMembers = [
         position: "Operations Lead",
     },
 ];
+
+export const faqData = {
+    title: "What can we help?",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    faqs: [
+        {
+            question: "Where Can I Find Information?",
+            answer:
+                "Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu. Euismod magnis ante convallis vulputate odio augue sit pretium dapibus.",
+        },
+        {
+            question: "What Are Your Terms And Conditions?",
+            answer:
+                "Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu.",
+        },
+        {
+            question: "Can I Buy Directly From The Factory?",
+            answer:
+                "Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu.",
+        },
+        {
+            question: "What Kinds of Payment Do You Accept?",
+            answer:
+                "Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu.",
+        },
+        {
+            question: "When do I receive my order?",
+            answer:
+                "Velit sociosqu purus enim pharetra sed sem at iaculis. Felis ridiculus adipiscing dignissim eros pellentesque mus vitae litora. Felis nullam tortor phasellus viverra ut arcu.",
+        },
+    ],
+};
