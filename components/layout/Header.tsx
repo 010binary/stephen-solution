@@ -23,9 +23,9 @@ export default function Header() {
       href: "/about",
       label: "About Us",
       dropdown: [
-        { href: "/about/company", label: "Our Company" },
-        { href: "/about/team", label: "Our Team" },
-        { href: "/about/values", label: "Our Values" },
+        { href: "/about-us/company", label: "Our Company" },
+        { href: "/about-us/team", label: "Our Team" },
+        { href: "/about-us/values", label: "Our Values" },
       ],
     },
     {
@@ -95,9 +95,14 @@ export default function Header() {
                       <span
                         className={`text-sm font-medium transition-colors hover:text-primary relative
                         ${
-                          isActive(item.href)
-                            ? "text-blue-500"
+                          item.label === "Contact Us"
+                            ? "text-red-500"
                             : "text-foreground"
+                        }
+                        ${
+                          isActive(item.href)
+                            ? "after:absolute after:left-0 after:bottom-[-20px] after:w-full after:h-0.5 after:bg-blue-500"
+                            : ""
                         }`}
                       >
                         {item.label}
@@ -106,8 +111,13 @@ export default function Header() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
                       {item.dropdown.map((subItem) => (
-                        <DropdownMenuItem key={subItem.href}>
-                          <Link href={subItem.href} className="w-full">
+                        <DropdownMenuItem key={subItem.href} asChild>
+                          <Link
+                            href={subItem.href}
+                            className={`w-full text-sm ${
+                              isActive(subItem.href) ? "text-blue-500" : ""
+                            }`}
+                          >
                             {subItem.label}
                           </Link>
                         </DropdownMenuItem>
@@ -147,15 +157,26 @@ export default function Header() {
                   {navItems.map((item) =>
                     item.dropdown ? (
                       <div key={item.href} className="space-y-2">
-                        <span className="text-sm font-medium text-foreground">
+                        <span
+                          className={`text-sm font-medium ${
+                            isActive(item.href)
+                              ? "text-blue-500"
+                              : "text-foreground"
+                          }`}
+                        >
                           {item.label}
+                          <ChevronDown className="inline-block ml-1 h-4 w-4" />
                         </span>
                         <div className="pl-4 space-y-2">
                           {item.dropdown.map((subItem) => (
                             <Link
                               key={subItem.href}
                               href={subItem.href}
-                              className="block text-sm text-muted-foreground hover:text-primary"
+                              className={`block text-sm ${
+                                isActive(subItem.href)
+                                  ? "text-blue-500"
+                                  : "text-muted-foreground"
+                              } hover:text-primary`}
                             >
                               {subItem.label}
                             </Link>
@@ -166,10 +187,10 @@ export default function Header() {
                       <Link
                         key={item.href}
                         href={item.href}
-                        className={`text-sm font-medium transition-colors hover:text-primary relative
+                        className={`text-sm font-medium transition-colors hover:text-primary
                           ${
                             item.label === "Contact Us"
-                              ? "text-blue-500"
+                              ? "text-red-500"
                               : "text-foreground"
                           }
                           ${isActive(item.href) ? "text-blue-500" : ""}`}

@@ -77,6 +77,13 @@ body {
   }
 }
 
+.clip-diagonal-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
+}
+
+.clip-diagonal-2 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%, 0 0);
+}
 
 .zoomIn{
   animation: zoom 100s ease-in-out 3s ;

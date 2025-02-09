@@ -13,17 +13,15 @@ import { teamMembers } from "@/data/index";
 export default function Home() {
   return (
     <>
-      <main className="pt-24">
-        <Hero />
-        <WhoWeAre />
-        <WorldMap />
-        <ParallaxSection />
-        <SolutionsGrid />
-        <WhyChooseUs />
-        <Bridge />
-        <Management teamMembers={teamMembers} btn={true} />
-        <ProjectsSection />
-      </main>
+      <Hero />
+      <WhoWeAre />
+      <WorldMap />
+      <ParallaxSection />
+      <SolutionsGrid />
+      <WhyChooseUs />
+      <Bridge />
+      <Management teamMembers={teamMembers} btn={true} />
+      <ProjectsSection />
     </>
   );
 }

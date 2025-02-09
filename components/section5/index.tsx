@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { workerbg } from "@/public";
 
 export default function Bridge() {
   return (
@@ -11,7 +11,7 @@ export default function Bridge() {
           bg-cover bg-center bg-no-repeat 
           lg:bg-fixed"
         style={{
-          backgroundImage: `url('/oil-gas-operations-iraq.jpg')`,
+          backgroundImage: `url(${workerbg.src})`,
         }}
       />
 
@@ -19,23 +19,19 @@ export default function Bridge() {
       <div className="relative max-h-fit bg-black/40">
         <div className="container mx-auto px-4 py-24">
           <div className="text-center">
-            {/* Left Content */}
             <div className="text-white">
-              <h3 className="text-lg font-semibold mb-4">
-                Preserve And Conserve
+              <h3 className="text-2xl font-semibold mb-4">
+                Excellence in Oil Well Management
               </h3>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                A Vital Energy Resource For A Better Tomorrow
+                Ensuring Sustainable Energy for the Future
               </h2>
-              <p className="text-gray-200 mb-8">
-                Cubilia scelerisque ultricies at cras tempus phasellus primis
-                habitant. Penatibus pulvinar at vel cursus dignissim sem
-                condimentum molestie. Lobortis hac aenean posuere justo letius
-                laoreet augue.
+              <p className="text-gray-200 mb-8 text-xl">
+                Our expertise in oil well management ensures the efficient and
+                responsible extraction of vital energy resources. We are
+                committed to innovation, safety, and sustainability in all our
+                operations.
               </p>
-              <Button className="bg-[#e5fb34] text-black hover:bg-[#d4ea23] rounded-none">
-                DISCOVER MORE
-              </Button>
             </div>
           </div>
         </div>

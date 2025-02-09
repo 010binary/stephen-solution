@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import AnimatedCounter from "./animatedcounter";
+import { worldmap } from "@/public";
 
 const stats = [
   {
@@ -28,7 +29,7 @@ export default function WorldMap() {
           {/* Map Image */}
           <div className="relative">
             <Image
-              src="/World-map-a.png"
+              src={worldmap}
               alt="World Map"
               width={800}
               height={500}

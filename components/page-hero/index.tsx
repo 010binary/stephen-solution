@@ -40,20 +40,20 @@ export default function PageHero({
 
         {/* Content */}
         <Container>
-        <div className="relative z-10">
-          <div className="max-w-3xl">
-            {heading && (
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                {heading}
-              </h1>
-            )}
-            {description && (
-              <div className="relative pl-8 border-l-2 border-red-500">
-                <p className="text-lg text-white">{description}</p>
-              </div>
-            )}
+          <div className="relative z-10">
+            <div className="max-w-3xl">
+              {heading && (
+                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                  {heading}
+                </h1>
+              )}
+              {description && (
+                <div className="relative pl-6 border-l-2 border-red-500">
+                  <p className="text-xl text-white">{description}</p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
         </Container>
       </div>
     </>

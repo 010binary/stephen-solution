@@ -52,7 +52,7 @@ export default function TeamCard({
                 <Link
                   key={i}
                   href={social.href}
-                  className="p-2 bg-[#e5fb34] rounded-sm hover:bg-[#d4ea23] transition-colors"
+                  className="p-2 bg-blue-500 rounded-sm hover:bg-blue-500/55 transition-colors"
                 >
                   <social.icon className="w-4 h-4" />
                 </Link>
