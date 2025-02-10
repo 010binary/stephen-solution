@@ -35,7 +35,7 @@ export default function SolutionCard({
         </p>
         <Link
           href="#"
-          className={`absolute top-6 right-6 bg-[#e5fb34] p-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1`}
+          className={`absolute top-6 right-6 bg-blue-500 p-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1`}
         >
           <ArrowUpRight className="w-5 h-5" />
         </Link>

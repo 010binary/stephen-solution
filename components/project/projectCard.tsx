@@ -31,7 +31,7 @@ export default function ProjectCard({
           <p className="text-gray-600 mb-6">{description}</p>
           <Button
             variant="link"
-            className="bg-[#e5fb34] text-black hover:bg-[#d4ea23] px-8 h-12"
+            className="bg-blue-500 text-black hover:bg-blue-800 duration-300 px-8 h-12"
           >
             READ MORE
           </Button>

@@ -39,7 +39,7 @@ export default function WhoWeAre() {
             <div className="space-y-4">
               {features.map((feature) => (
                 <div key={feature} className="flex items-center gap-2">
-                  <div className="bg-[#e5fb34] p-1 rounded-full">
+                  <div className="bg-blue-500 p-1 rounded-full">
                     <Check className="w-4 h-4" />
                   </div>
                   <span>{feature}</span>
@@ -49,7 +49,7 @@ export default function WhoWeAre() {
 
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="bg-[#e5fb34] p-4 rounded-lg">
+                <div className="bg-blue-500 p-4 rounded-lg">
                   <svg
                     className="w-8 h-8"
                     viewBox="0 0 24 24"
@@ -74,7 +74,7 @@ export default function WhoWeAre() {
                   </h4>
                 </div>
               </div>
-              <Button className="bg-[#e5fb34] text-black hover:bg-[#d4ea23]">
+              <Button className="bg-blue-500 text-black hover:bg-blue-800 duration-300">
                 READ MORE
               </Button>
             </div>
@@ -82,7 +82,6 @@ export default function WhoWeAre() {
 
           {/* Right Content - Image with Video Button */}
           <div className="relative group">
-            
             <img
               src="/placeholder-5.jpg"
               alt="Oil Refinery"
@@ -97,7 +96,7 @@ export default function WhoWeAre() {
             /> */}
             <button
               onClick={() => setIsVideoOpen(true)}
-              className="absolute top-1 right-1 bg-[#e5fb34] p-4 border-[15px] border-[#f8f8f8] transition-transform group-hover:scale-110"
+              className="absolute top-1 right-1 bg-blue-500 p-4 border-[15px] border-[#f8f8f8] transition-transform group-hover:scale-110"
             >
               <Play className="w-6 h-6" />
             </button>

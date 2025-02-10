@@ -60,17 +60,17 @@ export default function Hero() {
         <div className="max-w-[95rem] px-6 mx-auto pt-24 pb-16 flex justify-between flex-col">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
-              Meeting Future Demand In A Sustainable Way
+              Leading the Way in Oilwell Head Solutions
             </h1>
             <p className="text-lg md:text-3xl text-gray-200 mb-10">
-              We&apos;re doing our part in that regard with greener practices
-              that don&apos;t harm the environment.
+              Providing top-notch installation and maintenance services to
+              ensure the efficiency and safety of your oilwell operations.
             </p>
-            <Button className="bg-yellow-300 text-black hover:bg-[#d4ea23] duration-300 rounded-none w-72 h-16 text-lg md:text-xl">
+            <Button className="bg-blue-500 text-black hover:bg-blue-700 duration-300 rounded-none w-72 h-16 text-lg md:text-xl">
+              LEARN MORE
               <span className="inline">
                 <Minus strokeWidth={3} />
               </span>
-              DISCOVER MORE
             </Button>
           </div>
 

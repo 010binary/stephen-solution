@@ -41,9 +41,18 @@ export default function Header() {
       href: "/services",
       label: "Services",
       dropdown: [
-        { href: "/services/construction", label: "Construction" },
-        { href: "/services/renovation", label: "Renovation" },
-        { href: "/services/consulting", label: "Consulting" },
+        { href: "/services/installation", label: "Installation" },
+        { href: "/services/maintainance", label: "Maintainance" },
+        { href: "/services/retainer", label: "Retainer" },
+      ],
+    },
+    {
+      href: "/more",
+      label: "More",
+      dropdown: [
+        { href: "/more/faq", label: "FAQ" },
+        { href: "/more/career", label: "Career" },
+        { href: "/more/partner", label: "PartnerShip" },
       ],
     },
     { href: "/contact", label: "Contact Us" },

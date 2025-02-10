@@ -63,7 +63,7 @@ export default function SolutionsGrid() {
               montes torquent luctus sagittis blandit nisl cubilia. Libero
               mattis nibh consequat class nunc.
             </p>
-            <div className="w-16 h-1 bg-[#e5fb34] mt-3"></div>
+            <div className="w-16 h-1 bg-blue-500 mt-3"></div>
           </section>
         </div>
 

@@ -83,7 +83,7 @@ export default function ParallaxSection() {
                 condimentum molestie. Lobortis hac aenean posuere justo letius
                 laoreet augue.
               </p>
-              <Button className="bg-[#e5fb34] text-black hover:bg-[#d4ea23]">
+              <Button className="bg-blue-500 text-black hover:bg-blue-800 duration-300">
                 DISCOVER MORE
               </Button>
             </div>

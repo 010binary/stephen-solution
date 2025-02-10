@@ -49,7 +49,7 @@ export default function AnimatedProgressBar({
       </div>
       <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
         <motion.div
-          className="h-full bg-[#e5fb34]"
+          className="h-full bg-blue-500"
           initial={{ width: 0 }}
           animate={isInView ? { width: `${percentage}%` } : { width: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
