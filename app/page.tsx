@@ -1,5 +1,5 @@
 import Hero from "@/components/hero/index";
-import ProjectsSection from "@/components/project";
+
 import WorldMap from "@/components/bridge/WorldMap";
 import ParallaxSection from "@/components/bridge/ParallaxSection";
 import Bridge from "@/components/bridge/section5";
@@ -21,7 +21,6 @@ export default function Home() {
         <WhyChooseUs />
         <Bridge />
         <Management teamMembers={teamMembers} btn={true} />
-        <ProjectsSection />
       </section>
     </>
   );

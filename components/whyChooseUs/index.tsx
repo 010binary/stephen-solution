@@ -2,18 +2,18 @@
 
 import Image from "next/image";
 import AnimatedProgressBar from "./animatedProgressBar";
+import Container from "../layout/Container";
 
 const stats = [
-  { label: "Cleaner", percentage: 90 },
-  { label: "Stronger", percentage: 75 },
+  { label: "Quality equipment", percentage: 85 },
   { label: "Better", percentage: 82 },
+  { label: "Stronger", percentage: 90 },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 px-4 relative">
-
-      <div className="container mx-auto ">
+    <section className="relative">
+      <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-center relative">
           {/* Left side - Images */}
           <div className="relative">
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
           {/* Right side - Content */}
           <div className="lg:pl-12">
             <h3 className="text-2xl font-semibold mb-4">Why Choose Us</h3>
-            <h2 className="text-4xl font-bold mb-6 text-justify">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-left md:text-justify">
               Excellence in Oil Well Head Installation and Repair
             </h2>
             <p className="text-gray-600 mb-8 text-justify">
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

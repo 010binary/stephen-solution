@@ -28,9 +28,9 @@ export default function Management({ teamMembers, btn }: ManagementProps) {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
         <div className="max-w-2xl mb-6 md:mb-0">
           <h2 className="text-4xl font-bold mb-4">Meet Our Leadership</h2>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <p className="text-gray-600 text-justify">
+            Our leadership team brings decades of experience in oil well head
+            installation and repair, ensuring top-notch service and expertise.
           </p>
         </div>
         {btn && (

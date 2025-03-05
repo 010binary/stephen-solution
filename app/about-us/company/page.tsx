@@ -1,7 +1,5 @@
 import RecruitmentSection from "@/components/ourTeam/recruitment";
 import PageHero from "@/components/page-hero";
-// import NewsSection from "@/components/news";
-import ProjectsSection from "@/components/project";
 import WorldMap from "@/components/bridge/WorldMap";
 import ParallaxSection from "@/components/bridge/ParallaxSection";
 import Bridge from "@/components/bridge/section5";
@@ -36,7 +34,7 @@ export default function Home() {
       <WhyChooseUs />
       <Bridge />
       <TeamSection teamMembers={teamMembers} />
-      <ProjectsSection />
+      
     </>
   );
 }
