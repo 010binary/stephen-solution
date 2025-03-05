@@ -19,15 +19,15 @@ export default function Footer() {
     <footer className="w-full">
       {/* Newsletter Section */}
       <div className="relative">
-        <div className="absolute inset-0 bg-black/60 z-10" aria-hidden="true" />
+        <div className="absolute inset-0 bg-black/90 z-10" aria-hidden="true" />
         <div
-          className="relative z-20 px-6 py-16 bg-cover bg-center"
+          className="relative z-20 py-16 bg-cover bg-center bg-black/50"
           style={{
             backgroundImage: `url("placeholder-2.jpg")`,
           }}
         >
           <Container>
-            <div className="grid lg:grid-cols-2 gap-8 items-center text-white">
+            <div className="grid lg:grid-cols-2 gap-8 items-center text-white ">
               <div>
                 <h2 className="text-4xl font-bold mb-4">Newsletter</h2>
                 <p className="text-lg">
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="bg-white text-black px-6 py-16">
+      <div className="bg-white text-black py-6">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {/* Company Section */}
@@ -178,7 +178,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-blue-500 text-black px-3 md:px-6">
+      <div className="bg-blue-500 text-black md:px-6">
         <Container>
           <div className="border-t py-3 border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div className="flex gap-6 mb-4 md:mb-0">
