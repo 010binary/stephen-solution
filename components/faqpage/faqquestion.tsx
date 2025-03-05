@@ -1,4 +1,4 @@
-import FAQSection from "../sections/accordion";
+import FAQSection from "./accordion";
 import { faqData } from "@/data/index";
 
 export default function FaqQuestion() {

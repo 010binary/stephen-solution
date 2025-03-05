@@ -1,7 +1,7 @@
 import React from "react";
 import PageHero from "@/components/page-hero";
 import { teamMembers } from "@/data";
-import Bridge from "@/components/section5";
+import Bridge from "@/components/bridge/section5";
 import RecruitmentSection from "@/components/ourTeam/recruitment";
 import Management from "@/components/team/Management";
 import { Moderncity } from "@/public";

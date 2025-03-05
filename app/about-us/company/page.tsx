@@ -1,12 +1,11 @@
-
 import RecruitmentSection from "@/components/ourTeam/recruitment";
 import PageHero from "@/components/page-hero";
 // import NewsSection from "@/components/news";
 import ProjectsSection from "@/components/project";
-import WorldMap from "@/components/section3";
-import ParallaxSection from "@/components/section4";
-import Bridge from "@/components/section5";
-import SolutionsGrid from "@/components/solutions";
+import WorldMap from "@/components/bridge/WorldMap";
+import ParallaxSection from "@/components/bridge/ParallaxSection";
+import Bridge from "@/components/bridge/section5";
+import SolutionsGrid from "@/components/SolutionsGrid";
 import Advisory from "@/components/team/Advisory";
 import Management from "@/components/team/Management";
 import TeamSection from "@/components/team/Management";

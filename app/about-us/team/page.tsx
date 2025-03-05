@@ -1,7 +1,7 @@
 import React from "react";
 import PageHero from "@/components/page-hero";
 import { completeteamMembers, teamMembers } from "@/data";
-import Bridge from "@/components/section5";
+import Bridge from "@/components/bridge/section5";
 import RecruitmentSection from "@/components/ourTeam/recruitment";
 import Advisory from "@/components/team/Advisory";
 import Management from "@/components/team/Management";

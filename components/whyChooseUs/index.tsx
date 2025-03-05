@@ -12,7 +12,8 @@ const stats = [
 export default function WhyChooseUs() {
   return (
     <section className="py-16 px-4 relative">
-      <div className="container mx-auto relative">
+
+      <div className="container mx-auto ">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative">
           {/* Left side - Images */}
           <div className="relative">
@@ -38,13 +39,14 @@ export default function WhyChooseUs() {
 
           {/* Right side - Content */}
           <div className="lg:pl-12">
-            <h3 className="text-lg font-semibold mb-4">Why Choose Us</h3>
-            <h2 className="text-4xl font-bold mb-6">
-              Promoting responsible use of petroleum resources
+            <h3 className="text-2xl font-semibold mb-4">Why Choose Us</h3>
+            <h2 className="text-4xl font-bold mb-6 text-justify">
+              Excellence in Oil Well Head Installation and Repair
             </h2>
-            <p className="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            <p className="text-gray-600 mb-8 text-justify">
+              With years of experience and a commitment to safety and quality,
+              we ensure that your oil well head installations and repairs are
+              handled with the utmost professionalism and expertise.
             </p>
 
             {/* Progress Bars */}

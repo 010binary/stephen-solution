@@ -29,20 +29,11 @@ export default function Header() {
       ],
     },
     {
-      href: "/projects",
-      label: "Projects",
-      dropdown: [
-        { href: "/projects/residential", label: "Residential" },
-        { href: "/projects/commercial", label: "Commercial" },
-        { href: "/projects/industrial", label: "Industrial" },
-      ],
-    },
-    {
       href: "/services",
       label: "Services",
       dropdown: [
-        { href: "/services/installation", label: "Installation" },
-        { href: "/services/maintainance", label: "Maintainance" },
+        { href: "/services/installation", label: "Installation plus EPC" },
+        { href: "/services/maintainance", label: "Repair & Maintainance" },
         { href: "/services/retainer", label: "Retainer" },
       ],
     },
@@ -50,11 +41,12 @@ export default function Header() {
       href: "/more",
       label: "More",
       dropdown: [
-        { href: "/more/faq", label: "FAQ" },
+        { href: "/more/gallery", label: "Gallery" },
         { href: "/more/career", label: "Career" },
         { href: "/more/partner", label: "PartnerShip" },
       ],
     },
+    { href: "/more/faq", label: "FAQ" },
     { href: "/contact", label: "Contact Us" },
   ];
 

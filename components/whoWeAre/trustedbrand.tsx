@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Container from "../layout/Container";
 
 const logos = [
   { id: 1, url: "/clients/Client-2.png" },
@@ -40,16 +41,16 @@ export default function TrustedBrands() {
   };
 
   return (
-    <div className="py-6 bg-[#f8f8f8]">
-      <div className="container mx-auto ">
+    <div className="py-6">
+      <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text Content */}
-          <div className="lg:pr-12">
+          <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Trusted by 30,000 world-class brands and organizations of all
               sizes
             </h2>
-            <div className="w-16 h-1 bg-[#e7d70e] mb-6"></div>
+            <div className="w-16 h-1 bg-blue-500"></div>
           </div>
 
           {/* Right side - Logo Carousel */}
@@ -94,7 +95,7 @@ export default function TrustedBrands() {
             </Button>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

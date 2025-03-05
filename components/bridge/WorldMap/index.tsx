@@ -3,15 +3,16 @@
 import Image from "next/image";
 import AnimatedCounter from "./animatedcounter";
 import { worldmap } from "@/public";
+import Container from "@/components/layout/Container";
 
 const stats = [
   {
-    value: 25,
+    value: 2,
     suffix: "+",
     label: "Years of Experience",
   },
   {
-    value: 77,
+    value: 10,
     label: "Office Worldwide",
   },
   {
@@ -23,8 +24,8 @@ const stats = [
 
 export default function WorldMap() {
   return (
-    <section className="py-8 md:py-16 bg-white">
-      <div className="container max-w-[95rem] px-4 mx-auto ">
+    <section className="bg-white">
+      <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Map Image */}
           <div className="relative">
@@ -40,12 +41,13 @@ export default function WorldMap() {
           {/* Content */}
           <div className="lg:pl-8">
             <h2 className="text-4xl font-bold mb-6">
-              We Spread Around The World
+              Global Expertise in Oil Well Head Installation and Repair
             </h2>
             <p className="text-gray-600 mb-12">
-              Laoreet lorem consectetuer hendrerit dictumst curae volutpat
-              cubilia elit velit natoque. Eleifend diam volutpat lectus aliquam
-              aenean. Dolor sed orci scelerisque taciti sodales tortor.
+              Based in Nigeria, we provide top-notch oil well head installation
+              and repair services worldwide. Our team of experts ensures the
+              highest standards of quality and safety in every project we
+              undertake.
             </p>
 
             {/* Stats Grid */}
@@ -59,7 +61,7 @@ export default function WorldMap() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import InteractiveSection from "./interactive-section";
 import { Button } from "@/components/ui/button";
 import { backgroundImages, sections } from "@/data";
 import { Minus } from "lucide-react";
+import Container from "../layout/Container";
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,7 +24,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative  overflow-hidden">
+    <div className="relative min-h-[50vh] overflow-hidden">
       {/* Background Images */}
       {backgroundImages.map((image, index) => {
         return (
@@ -56,36 +56,27 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50 z-10" />
 
       {/* Content */}
-      <div className="relative z-20">
-        <div className="max-w-[95rem] px-6 mx-auto pt-24 pb-16 flex justify-between flex-col">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
-              Leading the Way in Oilwell Head Solutions
-            </h1>
-            <p className="text-lg md:text-3xl text-gray-200 mb-10">
-              Providing top-notch installation and maintenance services to
-              ensure the efficiency and safety of your oilwell operations.
-            </p>
-            <Button className="bg-blue-500 text-black hover:bg-blue-700 duration-300 rounded-none w-72 h-16 text-lg md:text-xl">
-              LEARN MORE
-              <span className="inline">
-                <Minus strokeWidth={3} />
-              </span>
-            </Button>
-          </div>
-
-          {/* Interactive Sections */}
-          <div className="mt-36 grid md:grid-cols-2 lg:grid-cols-3">
-            {sections.map((section) => (
-              <InteractiveSection
-                key={section.title}
-                title={section.title}
-                description={section.description}
-              />
-            ))}
+      <Container>
+        <div className="relative z-20">
+          <div className="px-6 lg:px-0 mx-auto pt-24 pb-16 flex justify-between flex-col">
+            <div className="max-w-3xl text-center md:text-left ">
+              <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
+                Leading the Way in Oilwell Head Solutions
+              </h1>
+              <p className="text-xl font-semibold md:text-3xl text-gray-200 mb-10 ">
+                Providing top-notch installation and maintenance services to
+                ensure the efficiency and safety of your oilwell operations.
+              </p>
+              <Button className="bg-blue-500 text-black hover:bg-blue-700 duration-300 rounded-none w-72 h-16 text-lg md:text-xl">
+                LEARN MORE
+                <span className="inline">
+                  <Minus strokeWidth={3} />
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
