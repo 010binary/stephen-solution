@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 import TeamCard from "./teamCard";
 import Container from "../layout/Container";
 import { useRouter } from "next/navigation";
+import { StaticImageData } from "next/image";
 
 interface TeamMember {
   name: string;
-  image: string;
+  image: string | StaticImageData;
   position: string;
 }
 

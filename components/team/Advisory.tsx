@@ -2,11 +2,12 @@
 
 import TeamCard from "./teamCard";
 import Container from "../layout/Container";
+import { StaticImageData } from "next/image";
 
 interface TeamMember {
   name: string;
-  image: string;
-  position: string;
+  image: string | StaticImageData;
+  position?: string;
 }
 
 interface AdvisoryProps {

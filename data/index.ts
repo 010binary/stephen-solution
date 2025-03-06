@@ -1,3 +1,5 @@
+import { ajayi, bashir, deji, john, richard, segun, sunday } from "@/public/ourTeam";
+
 export const sections = [
     {
         title: "Energy Transition",
@@ -25,68 +27,49 @@ export const backgroundImages = [
 ]
 export const teamMembers = [
     {
-        image: "/team/Team_1.jpg",
-        name: "Jason Ramos",
+        image: richard,
+        name: "Richard Saduwa",
         position: "Managing Director",
     },
     {
-        image: "/team/Team_3.jpg",
-        name: "Charles Bernardi",
-        position: "Head of Operation",
+        image: sunday,
+        name: "Sunday Saduwa",
+        position: "Chief Technical Officer",
     },
     {
-        image: "/team/Team_7.jpg",
-        name: "Corrie Deegan",
-        position: "Customer Relation",
+        image: bashir,
+        name: "Adeyemi Bashir",
+        position: "Chief Procurement Officer",
     },
     {
-        image: "/team/Team_8.jpg",
-        name: "James Lomas",
-        position: "Operations Lead",
+        image: segun,
+        name: "Segun Joseph",
+        position: "Project Manager",
     },
 ];
 
 export const completeteamMembers = [
     {
-        image: "/team/Team_1.jpg",
-        name: "Jason Ramos",
-        position: "Managing Director",
+        image: sunday,
+        name: "Sunday Saduwa",
+      
     },
     {
-        image: "/team/Team_3.jpg",
-        name: "Charles Bernardi",
-        position: "Head of Operation",
+        image: deji,
+        name: "Deji Olatunbosun",
+      
     },
     {
-        image: "/team/Team_7.jpg",
-        name: "Corrie Deegan",
-        position: "Customer Relation",
+        image: john,
+        name: "John Dekawei",
+      
     },
     {
-        image: "/team/Team_8.jpg",
-        name: "James Lomas",
-        position: "Operations Lead",
+        image: ajayi,
+        name: "Ayola Ajayi",
+      
     },
-    {
-        image: "/team/Team_1.jpg",
-        name: "Jason Ramos",
-        position: "Managing Director",
-    },
-    {
-        image: "/team/Team_3.jpg",
-        name: "Charles Bernardi",
-        position: "Head of Operation",
-    },
-    {
-        image: "/team/Team_7.jpg",
-        name: "Corrie Deegan",
-        position: "Customer Relation",
-    },
-    {
-        image: "/team/Team_8.jpg",
-        name: "James Lomas",
-        position: "Operations Lead",
-    },
+
 ];
 
 export const faqData = {
@@ -203,22 +186,21 @@ export const installationDetail = {
 
 export const ParallaxSectionData = [
     {
-      id: "installation",
-      title: "Installation",
-      content:
-        "Our team ensures precise and efficient installation of oil well heads, adhering to the highest industry standards.",
+        id: "installation",
+        title: "Installation",
+        content:
+            "Our team ensures precise and efficient installation of oil well heads, adhering to the highest industry standards.",
     },
     {
-      id: "maintenance",
-      title: "Maintenance",
-      content:
-        "Regular maintenance services to keep your oil well heads in optimal condition, minimizing downtime and maximizing productivity.",
+        id: "maintenance",
+        title: "Maintenance",
+        content:
+            "Regular maintenance services to keep your oil well heads in optimal condition, minimizing downtime and maximizing productivity.",
     },
     {
-      id: "repair",
-      title: "Repair",
-      content:
-        "Expert repair services for any issues that arise, ensuring your operations continue smoothly and safely.",
+        id: "repair",
+        title: "Repair",
+        content:
+            "Expert repair services for any issues that arise, ensuring your operations continue smoothly and safely.",
     },
-  ];
-  
+];

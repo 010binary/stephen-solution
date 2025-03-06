@@ -1,15 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TeamMemberProps {
-  image: string;
+  image: string | StaticImageData;
   name: string;
-  position: string;
+  position?: string;
   index: number;
 }
 
@@ -41,23 +39,7 @@ export default function TeamCard({
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl font-bold mb-2">{name}</h3>
-            <p className="text-gray-600 mb-4">{position}</p>
-            <div className="flex justify-center gap-2">
-              {[
-                { icon: Facebook, href: "#" },
-                { icon: Twitter, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Instagram, href: "#" },
-              ].map((social, i) => (
-                <Link
-                  key={i}
-                  href={social.href}
-                  className="p-2 bg-blue-500 rounded-sm hover:bg-blue-500/55 transition-colors"
-                >
-                  <social.icon className="w-4 h-4" />
-                </Link>
-              ))}
-            </div>
+            {position && <p className="text-gray-600 mb-4">{position}</p>}
           </div>
         </CardContent>
       </Card>

@@ -51,7 +51,7 @@ export default function WhoWeAre() {
               {features.map((feature) => (
                 <div key={feature} className="flex items-center gap-2">
                   <div className="bg-blue-500 p-1 rounded-full">
-                    <Check className="w-5 h-5" strokeWidth={4} />
+                    <Check className="w-5 h-5 text-white" strokeWidth={4} />
                   </div>
                   <span>{feature}</span>
                 </div>
