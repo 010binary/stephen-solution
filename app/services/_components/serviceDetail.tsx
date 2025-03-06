@@ -80,7 +80,7 @@ export default function ServiceDetails({
               <ul className="space-y-3">
                 {benefits.list.map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-[#e5fb34] mt-1 shrink-0" />
+                    <Check className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                     <span className="text-gray-600">{item}</span>
                   </li>
                 ))}
@@ -105,7 +105,7 @@ export default function ServiceDetails({
           <div className="bg-[#647973] text-white p-6 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">{contactSection.title}</h3>
             <p className="mb-6 text-gray-100">{contactSection.description}</p>
-            <Button className="w-full bg-[#e5fb34] text-black hover:bg-[#d4ea23]">
+            <Button className="w-full bg-blue-500 text-black hover:bg-blue-400">
               {contactSection.buttonText}
             </Button>
           </div>

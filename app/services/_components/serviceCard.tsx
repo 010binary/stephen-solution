@@ -58,7 +58,7 @@ export default function ServiceHero({
         {/* Description */}
         <div className="max-w-4xl mx-auto mt-16 text-white space-y-4">
           {description.split("\n").map((paragraph, i) => (
-            <p key={i} className="text-lg leading-relaxed">
+            <p key={i} className="text-lg text-justify leading-relaxed">
               {paragraph}
             </p>
           ))}
