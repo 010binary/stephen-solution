@@ -23,7 +23,6 @@ export default function Header() {
       href: "/about",
       label: "About Us",
       dropdown: [
-        { href: "/about-us/company", label: "Our Company" },
         { href: "/about-us/team", label: "Our Team" },
         { href: "/about-us/values", label: "Our Values" },
       ],
@@ -46,7 +45,7 @@ export default function Header() {
         { href: "/more/partner", label: "PartnerShip" },
       ],
     },
-    { href: "/more/faq", label: "FAQ" },
+    { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact Us" },
   ];
 

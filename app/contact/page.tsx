@@ -1,33 +1,23 @@
+import PageHero from "@/components/page-hero";
+
+import { contact } from "@/public/backgrounds";
 import React from "react";
+import ContactForm from "./contactForm";
+import ContactInfo from "./contactInfo";
 
 const page = () => {
   return (
-    <div>
-      page
-      <>
-        <div id="form">
-          <form>
-            <div>
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-              <label htmlFor="firstname">First Name:</label>
-              <input type="text" id="firstname" name="firstname" required />
-            </div>
-            <div>
-              <label htmlFor="lastname">Last Name:</label>
-              <input type="text" id="lastname" name="lastname" required />
-            </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </>
-    </div>
+    <>
+      <PageHero
+        image={contact}
+        heading="Our Contact"
+        description="From the most remote corners of the Earth comes the fuel that makes modern life possible."
+      />
+      <section className="space-y-16 pt-10 pb-10">
+        <ContactForm />
+        <ContactInfo />
+      </section>
+    </>
   );
 };
 

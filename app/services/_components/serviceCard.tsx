@@ -34,10 +34,10 @@ export default function ServiceHero({
         <span className="text-[#F0A500] text-6xl font-bold">
           {index.toString().padStart(2, "0")}
         </span>
-        <div className="flex gap-2">
-          <div className="w-6 h-6 bg-red-500 rounded-sm" />
-          <div className="w-6 h-6 bg-[#F0A500] rounded-full" />
-          <div className="w-6 h-6 border-[#4169E1] border-[3px] transform rotate-45" />
+        <div className="hidden md:flex items-center gap-2">
+          <div className="w-6 h-6 bg-red-500"></div>
+          <div className="w-6 h-6 bg-amber-500 rounded-full"></div>
+          <div className="w-6 h-6 bg-blue-600 transform rotate-45"></div>
         </div>
       </div>
 

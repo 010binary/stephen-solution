@@ -1,12 +1,13 @@
 import ServiceHero from "../_components/serviceCard";
 import { installationDetail, Retainership } from "@/data";
 import ServiceDetails from "../_components/serviceDetail";
+import Container from "@/components/layout/Container";
 
 export default function Page() {
   return (
-    <div className="p-4 md:p-8">
+    <Container>
       <ServiceHero {...Retainership} />
       <ServiceDetails {...installationDetail} />
-    </div>
+    </Container>
   );
 }

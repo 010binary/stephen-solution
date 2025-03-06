@@ -5,7 +5,7 @@ import Bridge from "@/components/bridge/section5";
 import RecruitmentSection from "@/components/ourTeam/recruitment";
 import Management from "@/components/team/Management";
 import { Moderncity } from "@/public";
-import { ValuesSection } from "@/components/values/ValuesSection";
+import ValuesSection  from "@/components/values/ValuesSection";
 
 const page = () => {
   return (

@@ -1,20 +1,22 @@
-import ContactForm from "@/app/contact/contactForm";
-import ContactInfo from "@/app/contact/contactInfo";
+import FaqQuestion from "@/components/faqpage/faqquestion";
+import RecruitmentSection from "@/components/ourTeam/recruitment";
+import Bridge from "@/components/bridge/section5";
+import React from "react";
 import PageHero from "@/components/page-hero";
 import { contact } from "@/public/backgrounds";
-import React from "react";
 
 const page = () => {
   return (
     <>
       <PageHero
         image={contact}
-        heading="Partnership with us"
+        heading="Frequently asked questions"
         description="From the most remote corners of the Earth comes the fuel that makes modern life possible."
       />
       <section className="space-y-16 pt-10 pb-10">
-        <ContactForm />
-        <ContactInfo />
+        <FaqQuestion />
+        <Bridge />
+        <RecruitmentSection />
       </section>
     </>
   );
