@@ -17,6 +17,21 @@ export default function Footer() {
 
   return (
     <footer className="w-full">
+      {/* map  */}
+      <Container>
+        <section className="w-full h-96 mb-10">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5773548159164!2d3.554730076364669!3d6.448270924030201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf700036eae63%3A0x113956866e79ab0e!2sTatiana%20Court!5e0!3m2!1sen!2sng!4v1741217883133!5m2!1sen!2sng"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </Container>
+
       {/* Newsletter Section */}
       <div className="relative">
         <div className="absolute inset-0 bg-black/90 z-10" aria-hidden="true" />

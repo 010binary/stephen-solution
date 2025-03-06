@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { backgroundImages, sections } from "@/data";
+import { backgroundImages } from "@/data";
 import { Minus } from "lucide-react";
 import Container from "../layout/Container";
 

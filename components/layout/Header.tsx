@@ -63,11 +63,11 @@ export default function Header() {
     <div className="fixed top-0 z-50 w-full bg-white">
       <div className="bg-blue-500 py-2">
         <Container>
-          <div className="flex justify-center items-center space-x-6 text-white text-sm">
-            <span>
+          <div className="flex flex-wrap justify-center items-center space-x-6 text-white text-sm flex-auto">
+            <span className="flex items-center">
               📞 <a href="tel:+234 801 234 5679">(+234)801 234 5679</a>{" "}
             </span>
-            <span>
+            <span className="flex items-center">
               📧
               <a href="mailto:info@stephensolution.com.ng">
                 info@stephensolution.com.ng
