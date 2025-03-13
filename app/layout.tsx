@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-site-verification" content="UJecft7UmFvy4F3LkBX2pXVYzKbCxs" />
+      </Head>
       <body
         className={`antialiased ${roboto.className} w-screen overflow-x-hidden`}
       >
